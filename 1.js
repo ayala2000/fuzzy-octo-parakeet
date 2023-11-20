@@ -1,11 +1,11 @@
 
-const http = require('http');
+const https = require('http');
 const data = {
     name: "frontendguruji",
     category: "technology",
     website: "frontendguruji.com",
 };
-http.createServer((request, response) => {
+https.createServer((request, response) => {
     const reqURL = request.url;
     const reqMethod = request.method;
     switch (reqMethod) {
